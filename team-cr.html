@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>OWCS KOREA | CRAZY RACCOON</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .roster-card-link {
+      text-decoration: none;
+      display: block;
+    }
+    .roster-card-link .roster-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .roster-card-link:hover .roster-card {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(225, 25, 25, 0.25);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <h1 class="text-light">
+          <a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/owcs logo.png" alt="OWCS Logo" class="img-fluid me-2" style="max-height: 35px;">
+            <span>OWCS KOREA</span>
+          </a>
+        </h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="dropdown" href="index.html">Home</a></li>
+          <li><a href="about.html">대회 안내</a></li>
+          <li class="dropdown"><a href="#"><span>대회 및 순위</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>STAGE1</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="rank.html">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">CHAMPIONS CLASH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE2</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">MIDSEASON CHAMPIONSHIP</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE3</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">WORLD FINALS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="team.html" class="active"><span>TEAM</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="team-cr.html">CRAZY RACOON</a></li>
+              <li><a href="#">ZETA DIVISON</a></li>
+              <li><a href="#">T1</a></li>
+              <li><a href="#">TEAM FALCONS</a></li>
+              <li><a href="#">RODE ZANSIDE GAMING</a></li>
+              <li><a href="#">POKER FACE</a></li>
+              <li><a href="#">CHEESEBURGER</a></li>
+              <li><a href="#">O2 BLAST</a></li>
+              <li><a href="#">SUPERBAD</a></li>
+            </ul>
+          </li>
+          <li><a href="media.html">미디어</a></li>
+          <li><a href="fan.html">팬</a></li>
+          <li><a href="qna.html">QnA</a></li>
+          <li><a href="news.html">NEWS</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Wide Banner: CRAZY RACCOON ======= -->
+  <section id="team-banner" class="d-flex align-items-center text-white" style="background-color: black;">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex align-items-center gap-4">
+
+        <!-- 팀 로고 -->
+        <div class="team-logo-wrap">
+          <img src="assets/img/teams/라쿤.svg" alt="CRAZY RACCOON Logo">
+        </div>
+
+        <!-- 팀 이름 & 서브타이틀 -->
+        <div>
+          <div class="team-sub mb-2">Overwatch Team</div>
+          <h1 class="mb-1">CRAZY RACCOON</h1>
+          <div class="d-flex align-items-center gap-2 mt-2">
+            <span class="badge text-white fw-bold px-2 py-1" style="background:#e11919; font-size:0.7rem;">OWCS KR</span>
+            <span class="badge bg-white text-dark fw-semibold px-2 py-1" style="font-size:0.7rem;">창단 2024.03</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Wide Banner -->
+
+  <!-- ======= Main Content ======= -->
+  <section class="py-5 bg-light">
+    <div class="container-fluid px-lg-5">
+
+      <!-- ── Row 1: 팀 정보 + 우승 경력 배너 ── -->
+      <div class="row g-4 mb-4">
+
+        <!-- 팀 기본 정보 -->
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-sm rounded-4 bg-white p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div style="width:72px;height:72px;background:#1a1a1a;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1.5px solid #e11919;flex-shrink:0;">
+                <img src="assets/img/teams/라쿤.svg" alt="CRAZY RACCOON" style="width:50px;height:50px;object-fit:contain;">
+              </div>
+              <div>
+                <h2 class="fw-black mb-0" style="font-size:1.7rem;">CRAZY RACCOON</h2>
+                <div class="text-muted" style="font-size:0.75rem; font-weight:600; letter-spacing:1px;">OVERWATCH ESPORTS</div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-label">창단</span>
+              <span class="info-value">2024년 3월 1일</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">소속 리그</span>
+              <span class="info-value">OWCS KR</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">팀명</span>
+              <span class="info-value">CRAZY RACCOON</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">감독</span>
+              <span class="info-value">문병철 (Moon)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">코치</span>
+              <span class="info-value">손준영 (Kong) · 김민철 (IZaYaKi)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">SNS</span>
+              <span class="info-value d-flex gap-3">
+                <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우승 배너 + 개요 -->
+        <div class="col-lg-7 d-flex flex-column gap-3">
+
+          <!-- 우승 하이라이트 배너 -->
+          <div class="champ-banner">
+            <div class="trophy-icon" style="color: #FFD700;"><i class="bi bi-trophy-fill"></i></div>
+            <div>
+              <div class="champ-title">2026 CHAMPIONS CLASH</div>
+              <div class="champ-desc">Most Recent Championship · 2026</div>
+            </div>
+            <div class="ms-auto text-end">
+              <div style="color:#FFD700; font-size:1.6rem; line-height:1; letter-spacing:3px;">★★★★</div>
+              <div class="text-muted" style="font-size:0.7rem;">국제 대회 우승</div>
+            </div>
+          </div>
+
+          <!-- 개요 -->
+          <div class="card border-0 shadow-sm rounded-4 bg-white p-4 flex-grow-1">
+            <div class="section-label mb-2">About</div>
+            <div class="section-title mb-3">개요</div>
+            <p class="text-muted mb-0" style="font-size:0.9rem; line-height:1.8;">
+              CRAZY RACCOON은 2024년 3월 1일 창단된 일본 기반의 프로 오버워치 팀으로, OWCS KR 무대에서 활약하고 있습니다.<br>
+              창단 첫 해부터 국제 대회 챔피언십을 석권하며 세계 정상급 팀으로 자리매김했으며, 2024·2025·2026 Champions Clash와 Esports World Cup 2024를 포함해 국제 대회 4회 우승을 달성했습니다.<br>
+              강렬한 공격성과 치밀한 팀워크로 매 시즌 정상을 향해 질주하는 팀입니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Row 2: 팀 컬러 & 유니폼 ── -->
+      <div class="row g-4 mb-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm rounded-4 bg-white p-4">
+            <div class="section-label mb-1">Visual Identity</div>
+            <div class="section-title mb-4">팀 컬러 및 유니폼</div>
+
+            <div class="row g-4 align-items-start">
+
+              <!-- 팀 컬러 -->
+              <div class="col-lg-4">
+                <div class="fw-bold text-dark mb-3" style="font-size:0.85rem;">팀 컬러</div>
+                <div class="d-flex flex-column gap-3">
+
+                  <div class="d-flex align-items-center gap-3 p-3 rounded-3 border bg-light">
+                    <div class="color-chip" style="background:#e11919;"></div>
+                    <div>
+                      <div class="fw-bold text-dark" style="font-size:0.9rem;">#E11919</div>
+                      <div class="text-muted" style="font-size:0.72rem;">Raccoon Red</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 p-3 rounded-3 border bg-light">
+                    <div class="color-chip" style="background:#000000; border-color: #444;"></div>
+                    <div>
+                      <div class="fw-bold text-dark" style="font-size:0.9rem;">#000000</div>
+                      <div class="text-muted" style="font-size:0.72rem;">Pure Black</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 p-3 rounded-3 border bg-light">
+                    <div class="color-chip" style="background:#FFFFFF; border-color:#ddd;"></div>
+                    <div>
+                      <div class="fw-bold text-dark" style="font-size:0.9rem;">#FFFFFF</div>
+                      <div class="text-muted" style="font-size:0.72rem;">White</div>
+                    </div>
+                  </div>
+
+                  <!-- 컬러 팔레트 바 -->
+                  <div class="d-flex rounded-3 overflow-hidden" style="height:28px; border:1px solid #eee;">
+                    <div style="flex:3; background:#e11919;"></div>
+                    <div style="flex:3; background:#000000;"></div>
+                    <div style="flex:1; background:#FFFFFF; border-left:1px solid #eee;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 유니폼 앞면 -->
+              <div class="col-lg-4">
+                <div class="fw-bold text-dark mb-3" style="font-size:0.85rem;">유니폼 앞면</div>
+                <div class="uniform-card">
+                  <div class="jersey-area">
+                    <img src="assets/img/CR유니폼 앞.webp" alt="CRAZY RACCOON Jersey Front">
+                  </div>
+                  <div class="jersey-label">앞면 (HOME)</div>
+                </div>
+              </div>
+
+              <!-- 유니폼 뒷면 -->
+              <div class="col-lg-4">
+                <div class="fw-bold text-dark mb-3" style="font-size:0.85rem;">유니폼 뒷면</div>
+                <div class="uniform-card">
+                  <div class="jersey-area">
+                    <img src="assets/img/CR유니폼 뒤.webp" alt="CRAZY RACCOON Jersey Back">
+                  </div>
+                  <div class="jersey-label">뒷면 (BACK)</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Row 3: 로스터 ── -->
+      <div class="row g-4 mb-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm rounded-4 bg-white p-4">
+            <div class="section-label mb-1">Current Squad</div>
+            <div class="section-title mb-4">로스터</div>
+
+            <div class="row g-3 flex-nowrap overflow-auto">
+
+              <!-- LIP -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/립.webp" alt="LIP"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">LIP</div>
+                    <span class="role-badge role-dps"><i class="bi bi-crosshair2 me-1"></i>DAMAGE</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- HeeSang -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/희상.webp" alt="HeeSang"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">HeeSang</div>
+                    <span class="role-badge role-dps"><i class="bi bi-crosshair2 me-1"></i>DAMAGE</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- Stalk3r -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/스토커.webp" alt="Stalk3r"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">Stalk3r</div>
+                    <span class="role-badge role-dps"><i class="bi bi-crosshair2 me-1"></i>DAMAGE</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- JunBin -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="player-junbin.html" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/준빈.webp" alt="JunBin"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">JunBin</div>
+                    <span class="role-badge role-tank"><i class="bi bi-shield-fill me-1"></i>TANK</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- MAX -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/맥스.webp" alt="MAX"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">MAX</div>
+                    <span class="role-badge role-tank"><i class="bi bi-shield-fill me-1"></i>TANK</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- CHORONG -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/초롱.webp" alt="CHORONG"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">CHORONG</div>
+                    <span class="role-badge role-support"><i class="bi bi-plus-circle-fill me-1"></i>SUPPORT</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- vigilante -->
+              <div class="col" style="min-width:0; flex:1 1 calc(100%/7);">
+                <a href="#" class="roster-card-link">
+                <div class="roster-card">
+                  <div class="accent-bar"></div>
+                  <div class="player-img-placeholder">
+                    <img src="assets/img/players/비질란테.webp" alt="vigilante"
+                         style="width:100%;height:100%;object-fit:cover;object-position:top;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">
+                      <i class="bi bi-person-fill text-white" style="font-size:3.5rem; opacity:0.3;"></i>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-white">
+                    <div class="fw-black text-dark mb-1" style="font-size:0.88rem; letter-spacing:0.5px;">vigilante</div>
+                    <span class="role-badge role-support"><i class="bi bi-plus-circle-fill me-1"></i>SUPPORT</span>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Row 4: 주요 경력 ── -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm rounded-4 bg-white p-4">
+            <div class="section-label mb-1">Achievements</div>
+            <div class="section-title mb-4">주요 경력</div>
+
+            <div class="row g-4">
+
+              <!-- 우승 -->
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <i class="bi bi-trophy-fill text-warning fs-5"></i>
+                  <span class="fw-bold text-dark">우승 경력</span>
+                  <span class="badge bg-warning text-dark ms-1" style="font-size:0.65rem;">10회</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2024 STAGE1 ASIA 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2024 CHAMPIONS CLASH 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">ESPORTS WORLD CUP 2024 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">SOOP OVERWATCH2 CUP SEASON2 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 STAGE1 KOREA 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 CHAMPIONS CLASH 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 STAGE2 KOREA 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 STAGE3 KOREA 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 STAGE3 ASIA 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item win">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-trophy-fill text-warning"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2026 CHAMPIONS CLASH 우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2026</span>
+                </div>
+
+              </div>
+
+              <!-- 준우승 -->
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <i class="bi bi-award-fill text-secondary fs-5"></i>
+                  <span class="fw-bold text-dark">준우승 경력</span>
+                  <span class="badge bg-secondary ms-1" style="font-size:0.65rem;">5회</span>
+                </div>
+
+                <div class="career-item runner-up">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award-fill text-secondary"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2024 STAGE1 KOREA 준우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item runner-up">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award-fill text-secondary"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2024 STAGE2 ASIA 준우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item runner-up">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award-fill text-secondary"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2024 WORLD FINAL 준우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2024</span>
+                </div>
+
+                <div class="career-item runner-up">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award-fill text-secondary"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2025 STAGE1 ASIA 준우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2025</span>
+                </div>
+
+                <div class="career-item runner-up">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-award-fill text-secondary"></i>
+                    <span class="fw-semibold text-dark" style="font-size:0.88rem;">2026 STAGE1 ASIA 준우승</span>
+                  </div>
+                  <span class="text-muted fw-semibold" style="font-size:0.78rem; white-space:nowrap; margin-left:8px;">2026</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Main Content -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 footer-links mb-4">
+          <ul class="d-flex flex-wrap justify-content-center align-items-center gap-4 list-unstyled mb-0">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">대회 안내</a></li>
+            <li><a href="rank.html">대회 및 순위</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="media.html">미디어</a></li>
+            <li><a href="fan.html">팬</a></li>
+            <li><a href="qna.html">QnA</a></li>
+            <li><a href="news.html">NEWS</a></li>
+          </ul>
+        </div>
+
+          <div class="col-12 text-center mb-2">
+            <div class="footer-social-links d-flex justify-content-center gap-4">
+              <a href="https://www.instagram.com/ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/OW_Esports_Asia" target="_blank" class="fs-3"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/@ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright text-white-50">&copy; Copyright <strong><span>OWCS KR</span></strong>. All Rights Reserved</div>
+      <div class="credits text-white-50">Designed by <a href="https://bootstrapmade.com/" class="text-white-50 text-decoration-underline">BootstrapMade</a></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>OWCS KOREA | NEWS</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-scrolled">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <h1 class="text-light">
+          <a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/owcs logo.png" alt="OWCS Logo" class="img-fluid me-2" style="max-height:35px;">
+            <span>OWCS KOREA</span>
+          </a>
+        </h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">대회 안내</a></li>
+          <li class="dropdown"><a href="#"><span>대회 및 순위</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>STAGE1</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="rank.html">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">CHAMPIONS CLASH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE2</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">MIDSEASON CHAMPIONSHIP</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE3</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">WORLD FINALS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="team.html"><span>TEAM</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="team-cr.html">CRAZY RACCOON</a></li>
+              <li><a href="#">ZETA DIVISION</a></li>
+              <li><a href="#">T1</a></li>
+              <li><a href="#">TEAM FALCONS</a></li>
+              <li><a href="#">RØDE ZANSIDE GAMING</a></li>
+              <li><a href="#">POKER FACE</a></li>
+              <li><a href="#">CHEESEBURGER</a></li>
+              <li><a href="#">O2 BLAST</a></li>
+              <li><a href="#">SUPERBAD</a></li>
+            </ul>
+          </li>
+          <li><a href="media.html">미디어</a></li>
+          <li><a href="fan.html">팬</a></li>
+          <li><a href="qna.html">QnA</a></li>
+          <li><a class="active" href="news.html">NEWS</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= 왼쪽 플로팅 소셜 공유 ======= -->
+  <div class="social-float">
+    <div class="social-float-line"></div>
+    <a class="social-float-btn youtube" href="#" title="youtube" onclick="share('youtube')">
+      <i class="bi bi-youtube"></i>
+    </a>
+    <a class="social-float-btn twitter" href="#" title="X(Twitter) 공유" onclick="share('twitter')">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+    <div class="social-float-line-bot"></div>
+  </div>
+
+  <!-- ======= 뉴스 상세 페이지 ======= -->
+  <div id="news-page">
+    <div class="container-fluid px-3 px-lg-4">
+
+      <!-- 브레드크럼 -->
+      <div style="max-width:860px; margin:0 auto 16px;" class="d-flex align-items-center gap-2" style="font-size:0.78rem;">
+        <a href="index-2.html" class="text-decoration-none text-muted" style="font-size:0.78rem; font-weight:600;">홈</a>
+        <i class="bi bi-chevron-right text-muted" style="font-size:0.65rem;"></i>
+        <a href="news.html" class="text-decoration-none text-muted" style="font-size:0.78rem; font-weight:600;">News</a>
+        <i class="bi bi-chevron-right text-muted" style="font-size:0.65rem;"></i>
+        <span class="text-dark fw-semibold" style="font-size:0.78rem;">STAGE 2 시청자 가이드</span>
+      </div>
+
+      <!-- ── 기사 카드 ── -->
+      <div class="article-card">
+
+        <!-- 썸네일 -->
+        <div class="article-thumb-placeholder">
+          <div class="thumb-deco"></div>
+          <div class="thumb-deco-line"></div>
+          <img src="assets/img/news/1.jpeg" alt="STAGE 2 VIEWERS GUIDE"
+               style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+               onerror="this.style.display='none'">
+        </div>
+
+        <!-- 본문 -->
+        <div class="article-body">
+
+          <span class="article-category-badge">공지 · NEWS</span>
+
+          <h1 class="article-title">
+            2026 OWCS KOREA STAGE 2 시청자 가이드
+          </h1>
+
+          <div class="article-meta">
+            <div class="author">
+              <div class="author-avatar"><i class="bi bi-person-fill" style="font-size:0.8rem;"></i></div>
+              <span style="font-weight:700; color:#333;">OWCS 운영팀</span>
+            </div>
+            <span><i class="bi bi-calendar3"></i>2026. 06. 12</span>
+            <span><i class="bi bi-eye"></i>12,480 조회</span>
+            <span><i class="bi bi-chat"></i>34 댓글</span>
+            <span style="margin-left:auto;">
+              <i class="bi bi-clock"></i> 읽는 시간 약 4분
+            </span>
+          </div>
+
+          <!-- 본문 콘텐츠 -->
+          <div class="article-content">
+
+            <!-- 목차 -->
+            <div class="toc-box">
+              <div class="toc-title">목차</div>
+              <ul>
+                <li><a href="#intro">소개</a></li>
+                <li><a href="#schedule">일정 및 대진</a></li>
+                <li><a href="#teams">참가 팀</a></li>
+                <li><a href="#format">경기 방식</a></li>
+                <li><a href="#watch">시청 방법</a></li>
+                <li><a href="#prize">상금 구조</a></li>
+              </ul>
+            </div>
+
+            <h2 id="intro">소개</h2>
+            <p>
+              2026 OWCS KOREA STAGE 2에 오신 것을 환영합니다! 치열했던 STAGE 1을 지나,
+              각 팀들은 더욱 갈고닦은 실력으로 두 번째 무대에 도전합니다.
+              이번 스테이지는 연간 포인트 레이스의 핵심 고비로, 상위권 팀들 간의
+              순위 다툼이 더욱 격렬해질 것으로 예상됩니다.
+            </p>
+            <p>
+              이 가이드에서는 STAGE 2를 즐기기 위한 일정, 참가 팀, 경기 방식,
+              시청 방법, 상금 구조까지 알아야 할 모든 정보를 한눈에 정리해 드립니다.
+            </p>
+
+            <div class="article-quote">
+              "이번 STAGE 2는 단순한 정규 리그가 아닙니다. 연말 World Finals 직행 티켓을 향한 진검 승부입니다."
+              <br><strong style="font-size:0.82rem; font-style:normal;">— OWCS 운영팀</strong>
+            </div>
+
+            <h2 id="schedule">일정 및 대진</h2>
+            <p>
+              STAGE 2는 라운드 로빈과 토너먼트 방식으로 진행되며, 상위 4팀이 플레이오프에 진출합니다.
+              모든 경기는 한국 시간 기준으로 아래와 같이 진행됩니다.
+            </p>
+
+            <table class="info-table">
+              <thead>
+                <tr>
+                  <th>라운드</th>
+                  <th>날짜</th>
+                  <th>시간 (KST)</th>
+                  <th>방식</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>라운드 로빈 WEEK1</strong></td>
+                  <td>2026. 06. 05 (금) ~ 06. 07(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>5판 3선승제</td>
+                </tr>
+                <tr>
+                  <td><strong>라운드 로빈 WEEK1</strong></td>
+                  <td>2026. 06. 12 (금) ~ 06. 14(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>5판 3선승제</td>
+                </tr>
+                <tr>
+                  <td><strong>라운드 로빈 WEEK1</strong></td>
+                  <td>2026. 06. 19 (금) ~ 06. 21(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>5판 3선승제</td>
+                </tr>
+                <tr>
+                  <td><strong>라운드 로빈 WEEK1</strong></td>
+                  <td>2026. 06. 26 (금) ~ 06. 28(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>5판 3선승제</td>
+                </tr>
+                <tr>
+                  <td><strong>Seeding & L.C.Q</strong></td>
+                  <td>2026. 07. 03 (금) ~ 07. 05(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>5판 3선승제</td>
+                </tr>
+                <tr>
+                  <td><strong>Play OFF</strong></td>
+                  <td>2026. 07. 19 (금) ~ 07. 21(일)</td>
+                  <td>17:00 / 15:00</td>
+                  <td>7판 4선승제</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2 id="teams">참가 팀</h2>
+            <p>이번 STAGE 2에는 총 9개 팀이 참가합니다.</p>
+            <ul>
+              <li><strong>Crazy Raccoon (CR)</strong>
+              <li><strong>ZETA DIVISION</strong>
+              <li><strong>T1</strong>
+              <li><strong>Team Falcons (FLC)</strong>
+              <li><strong>RØDE ZANSIDE GAMING</strong>
+              <li><strong>POKER FACE (PF)</strong>
+              <li><strong>CHEESEBURGER (CB)</strong>
+              <li><strong>O2 BLAST</strong>
+              <li><strong>SUPERBAD (SB)</strong>
+            </ul>
+
+            <h2 id="format">경기 방식</h2>
+            <p>
+              STAGE 2는 <strong>라운드 로빈과 토너먼트</strong>로 진행됩니다.
+              각 팀은 모두 한 번씩 모든 팀과 경기를 치르며 순위를 결정합니다. 1위부터 4위는 Play OFF 상위 시드를 노리기 위해
+              시드 결정전을 진행합니다. 5위부터 8위는 Play OFF를 진출하기 위한 2자리를 놓고 경쟁을 펼칩니다. 9위는 탈락합니다.
+              5위와 6위(M1), 7위와 8위(M2)가 대결을 하고 M1 Winner는 Play OFF 진입, M1 Loser와 M2 Winner가 마지막 한 자리를 놓고 경쟁합니다.
+              Play OFF는 토너먼트로 진행합니다.
+            </p>
+            <ul>
+              <li>라운드 로빈, Seeding & L.C.Q: 5판 3선승제 (FT3)</li>
+              <li>Play OFF: 7판 4선승제 (FT4)</li>
+            </ul>
+            <p>맵 풀</p>
+            <p>쟁탈: 일리오스, 오아시스, 남극 반도</p>
+            <p>혼합: 할리우드, 왕의 길, 눔바니</p>
+            <p>플래시포인트: 뉴 정크 시티, 수라바사</p>
+            <p>호위: 서킷 로얄, 리알토, 도라도</p>
+            <p>밀기: 뉴 퀸 스트리트, 루나사피</p>
+
+            <h2 id="watch">시청 방법</h2>
+            <p>모든 경기는 아래 채널에서 무료로 시청하실 수 있습니다.</p>
+            <ul>
+              <li>🎥 <strong>유튜브</strong>: <a href="https://www.youtube.com/@ow_esports_kr" target="_blank" style="color:#0984e3;">@ow_esports_kr</a></li>
+              <li>📺 <strong>SOOP</strong>: <a href="https://www.sooplive.com/station/owesports" target="_blank" style="color:#0984e3;">OWCS KOREA 공식 채널</a></li>
+            </ul>
+            <p>한국어 해설은 SOOP 채널에서 제공됩니다.</p>
+
+            <h2 id="prize">상금 구조</h2>
+            <p>STAGE 2 총 상금 풀은 <strong>$38,000</strong>이며 아래와 같이 분배됩니다.</p>
+
+            <table class="info-table">
+              <thead>
+                <tr>
+                  <th>순위</th>
+                  <th>팀</th>
+                  <th>상금</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🥇 1위</td>
+                  <td>결승 우승</td>
+                  <td><strong>$10,000</strong></td>
+                </tr>
+                <tr>
+                  <td>🥈 2위</td>
+                  <td>결승 준우승</td>
+                  <td>$8,000</td>
+                </tr>
+                <tr>
+                  <td>🥉 3위</td>
+                  <td>3위전 승리</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <td>4위</td>
+                  <td>3위전 패배</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <td>5~6위</td>
+                  <td>준결승 탈락</td>
+                  <td>$2,500</td>
+                </tr>
+                <tr>
+                  <td>7~8위</td>
+                  <td>L.C.Q 탈락</td>
+                  <td>$2,000</td>
+                </tr>
+                <tr>
+                  <td>9위</td>
+                  <td>라운드 로빈 탈락</td>
+                  <td>$1,500</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div><!-- end article-content -->
+
+          <!-- 하단 태그 -->
+          <div class="article-footer">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#" class="tag-pill">#OWCS</a>
+              <a href="#" class="tag-pill">#STAGE2</a>
+              <a href="#" class="tag-pill">#오버워치</a>
+              <a href="#" class="tag-pill">#시청자가이드</a>
+              <a href="#" class="tag-pill">#2026</a>
+            </div>
+          </div>
+
+        </div><!-- end article-body -->
+      </div><!-- end article-card -->
+
+      <!-- ── 이전 / 다음 뉴스 ── -->
+      <div class="news-nav">
+        <a class="news-nav-btn prev" href="#">
+          <div class="news-nav-arrow"><i class="bi bi-chevron-left"></i></div>
+          <div>
+            <div class="news-nav-label">이전 글</div>
+            <div class="news-nav-title">CHAMPIONS CLASH 시청자 가이드</div>
+          </div>
+        </a>
+        <a class="news-nav-btn next" href="#">
+          <div class="news-nav-arrow"><i class="bi bi-chevron-right"></i></div>
+          <div>
+            <div class="news-nav-label">다음 글</div>
+            <div class="news-nav-title">CR, STAGE 1 우승 후기 인터뷰</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- ── 관련 뉴스 ── -->
+      <div class="related-section">
+        <div class="related-title">관련 뉴스</div>
+        <div class="related-grid">
+
+          <a class="related-card" href="#">
+            <img class="related-thumb" src="assets/img/news/2.jpeg" alt="2026 OWCS STAGE 1 최종 결과 및 순위">
+            <div class="related-body">
+              <div class="related-ttl">CHAMPIONS CLASH 시청자 가이드</div>
+              <div class="related-date">2026/04/30</div>
+            </div>
+          </a>
+
+          <a class="related-card" href="#">
+            <img class="related-thumb" src="assets/img/news/3.jpeg" alt="Crazy Raccoon JunBin 인터뷰">
+            <div class="related-body">
+              <div class="related-ttl">OWCS 2026 프리 시즌 부트캠프 시청자 가이드</div>
+              <div class="related-date">2026/02/05</div>
+            </div>
+          </a>
+
+          <a class="related-card" href="#">
+            <img class="related-thumb" src="assets/img/news/4.jpeg" alt="2026 시즌 맵 풀 및 규정 변경">
+            <div class="related-body">
+              <div class="related-ttl">OWCS WORLD FINALS 시청자 가이드</div>
+              <div class="related-date">2025/11/10</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End News Detail -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 footer-links mb-4">
+          <ul class="d-flex flex-wrap justify-content-center align-items-center gap-4 list-unstyled mb-0">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">대회 안내</a></li>
+            <li><a href="rank.html">대회 및 순위</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="media.html">미디어</a></li>
+            <li><a href="fan.html">팬</a></li>
+            <li><a href="qna.html">QnA</a></li>
+            <li><a href="news.html">NEWS</a></li>
+          </ul>
+        </div>
+
+          <div class="col-12 text-center mb-2">
+            <div class="footer-social-links d-flex justify-content-center gap-4">
+              <a href="https://www.instagram.com/ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/OW_Esports_Asia" target="_blank" class="fs-3"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/@ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright text-white-50">&copy; Copyright <strong><span>OWCS KR</span></strong>. All Rights Reserved</div>
+      <div class="credits text-white-50">Designed by <a href="https://bootstrapmade.com/" class="text-white-50 text-decoration-underline">BootstrapMade</a></div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // 소셜 공유
+    function share(type) {
+      const url = encodeURIComponent(location.href);
+      const title = encodeURIComponent(document.title);
+      if (type === 'youtube') window.open(`https://www.youtube.com/@ow_esports_kr`, '_blank');
+      if (type === 'twitter')  window.open(`https://x.com/OW_Esports_Asia`, '_blank');
+    }
+
+    // 목차 스크롤
+    document.querySelectorAll('.toc-box a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // 읽기 진행도 표시 (선택 사항 — 스크롤 하이라이트)
+    window.addEventListener('scroll', () => {
+      const article = document.querySelector('.article-content');
+      if (!article) return;
+      const headings = article.querySelectorAll('h2[id]');
+      const scrollY = window.scrollY + 120;
+      headings.forEach(h => {
+        const tocLink = document.querySelector(`.toc-box a[href="#${h.id}"]`);
+        if (!tocLink) return;
+        const next = h.nextElementSibling;
+        const top = h.offsetTop;
+        const bottom = next ? next.offsetTop : Infinity;
+        if (scrollY >= top && scrollY < bottom) {
+          document.querySelectorAll('.toc-box a').forEach(l => l.style.color = '');
+          tocLink.style.color = '#f9a825';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

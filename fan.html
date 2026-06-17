@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>OWCS KOREA | 팬 페이지</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <h1 class="text-light">
+          <a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/owcs logo.png" alt="OWCS Logo" class="img-fluid me-2" style="max-height:35px;">
+            <span>OWCS KOREA</span>
+          </a>
+        </h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">대회 안내</a></li>
+          <li class="dropdown"><a href="#"><span>대회 및 순위</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>STAGE1</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="rank.html">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">CHAMPIONS CLASH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE2</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">MIDSEASON CHAMPIONSHIP</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE3</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">WORLD FINALS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="team.html"><span>TEAM</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="team-cr.html">CRAZY RACCOON</a></li>
+              <li><a href="#">ZETA DIVISION</a></li>
+              <li><a href="#">T1</a></li>
+              <li><a href="#">TEAM FALCONS</a></li>
+              <li><a href="#">RØDE ZANSIDE GAMING</a></li>
+              <li><a href="#">POKER FACE</a></li>
+              <li><a href="#">CHEESEBURGER</a></li>
+              <li><a href="#">O2 BLAST</a></li>
+              <li><a href="#">SUPERBAD</a></li>
+            </ul>
+          </li>
+          <li><a href="media.html">미디어</a></li>
+          <li><a class="active" href="fan.html">팬</a></li>
+          <li><a href="qna.html">QnA</a></li>
+          <li><a href="news.html">NEWS</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Wide Banner ======= -->
+  <section id="fan-banner">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="mb-2">FAN Page</h1>
+          <p class="banner-desc mb-4">
+            선수와 팀에게 힘이 되는 응원의 메시지를 남겨주세요!<br>
+            여러분의 응원이 힘이 됩니다.
+          </p>
+          <div class="d-flex align-items-center gap-4">
+            <div class="banner-stat">
+              <div class="banner-stat-icon"><i class="bi bi-pencil-fill"></i></div>
+              <div>
+                <div class="banner-stat-num">12,345</div>
+                <div class="banner-stat-label">응원 게시글</div>
+              </div>
+            </div>
+            <div class="banner-stat">
+              <div class="banner-stat-icon"><i class="bi bi-heart-fill"></i></div>
+              <div>
+                <div class="banner-stat-num">98,765</div>
+                <div class="banner-stat-label">좋아요</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Banner -->
+
+  <!-- ======= 팀 필터 탭 ======= -->
+  <div class="team-filter-wrap">
+    <div class="container-fluid px-lg-5">
+      <div class="team-filter-inner" id="teamFilter">
+
+        <!-- 전체 -->
+        <div class="team-tab tab-all active" data-team="all" onclick="filterTeam(this, 'all')">
+          <div class="team-tab-name">전체</div>
+        </div>
+
+        <!-- CR -->
+        <div class="team-tab" data-team="CR" onclick="filterTeam(this, 'CR')">
+          <img class="team-tab-logo" src="assets/img/teams/라쿤.svg" alt="CR"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">CR</div>
+        </div>
+
+        <!-- ZETA -->
+        <div class="team-tab" data-team="ZETA" onclick="filterTeam(this, 'ZETA')">
+          <img class="team-tab-logo" src="assets/img/teams/제타.svg" alt="ZETA"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">ZETA</div>
+        </div>
+
+        <!-- T1 -->
+        <div class="team-tab" data-team="T1" onclick="filterTeam(this, 'T1')">
+          <img class="team-tab-logo" src="assets/img/teams/티원.svg" alt="T1"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">T1</div>
+        </div>
+
+        <!-- FLC -->
+        <div class="team-tab" data-team="FLC" onclick="filterTeam(this, 'FLC')">
+          <img class="team-tab-logo" src="assets/img/teams/팔콘.webp" alt="FLC"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">FLC</div>
+        </div>
+
+        <!-- RØDE -->
+        <div class="team-tab" data-team="RODE" onclick="filterTeam(this, 'RODE')">
+          <img class="team-tab-logo" src="assets/img/teams/로데.webp" alt="RØDE"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">RØDE</div>
+        </div>
+
+        <!-- PF -->
+        <div class="team-tab" data-team="PF" onclick="filterTeam(this, 'PF')">
+          <img class="team-tab-logo" src="assets/img/teams/포페.svg" alt="PF"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">PF</div>
+        </div>
+
+        <!-- CB -->
+        <div class="team-tab" data-team="CB" onclick="filterTeam(this, 'CB')">
+          <img class="team-tab-logo" src="assets/img/teams/치벅.webp" alt="CB"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">CB</div>
+        </div>
+
+        <!-- O2 -->
+        <div class="team-tab" data-team="O2" onclick="filterTeam(this, 'O2')">
+          <img class="team-tab-logo" src="assets/img/teams/오투.svg" alt="O2"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">O2</div>
+        </div>
+
+        <!-- SB -->
+        <div class="team-tab" data-team="SB" onclick="filterTeam(this, 'SB')">
+          <img class="team-tab-logo" src="assets/img/teams/sb.webp" alt="SB"
+               onerror="this.style.display='none'">
+          <div class="team-tab-name">SB</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Team Filter -->
+
+  <!-- ======= Main Content ======= -->
+  <section class="py-5 bg-light">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4">
+
+        <!-- ── 게시판 (왼쪽) ── -->
+        <div class="col-lg-8">
+
+          <!-- 게시판 헤더 -->
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="fw-black text-dark" style="font-size:1.05rem;">응원 게시판</div>
+            <div class="d-flex align-items-center gap-3">
+              <span class="sort-tab active" onclick="setSort(this)">최신순</span>
+              <span class="sort-tab" onclick="setSort(this)">인기순</span>
+            </div>
+          </div>
+
+          <!-- 게시글 목록 -->
+          <div id="postList">
+
+            <!-- Post 1: T1 -->
+            <div class="post-card" data-team="T1">
+              <div class="d-flex align-items-start justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+                  <div>
+                    <div class="post-username">S</div>
+                    <div class="post-time">5분 전</div>
+                  </div>
+                </div>
+                <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="post-team-tag">
+                <img src="assets/img/teams/티원.svg" alt="T1" onerror="this.style.display='none'">
+                T1
+              </div>
+              <div class="post-body">
+                T1은 정말 최고야!! 오늘 경기 너무 짜릿했어 ㅠㅠ<br>
+                자스민 선수 POTM 축하드려요 ㅠㅠ 다음에도 꼭 이겨주세요!! 항상 응원합니다!! 🔥🔥
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <button class="post-action-btn" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> <span class="like-count">18</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="bi bi-chat"></i> <span>1</span>
+                  </button>
+                </div>
+                <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+              </div>
+            </div>
+
+            <!-- Post 2: ZETA -->
+            <div class="post-card" data-team="ZETA">
+              <div class="d-flex align-items-start justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+                  <div>
+                    <div class="post-username">제돌이는 김진슈</div>
+                    <div class="post-time">10분 전</div>
+                  </div>
+                </div>
+                <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="post-team-tag">
+                <img src="assets/img/teams/제타.svg" alt="ZETA" onerror="this.style.display='none'">
+                ZETA
+              </div>
+              <div class="post-body">
+                우리 ZETA 멋있다!! 집중력 대박 👊<br>
+                다음 경기도 화이팅입니다!
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <button class="post-action-btn" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> <span class="like-count">15</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="bi bi-chat"></i> <span>0</span>
+                  </button>
+                </div>
+                <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+              </div>
+            </div>
+
+            <!-- Post 3: CR -->
+            <div class="post-card" data-team="CR">
+              <div class="d-flex align-items-start justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+                  <div>
+                    <div class="post-username">크레1지라쿤</div>
+                    <div class="post-time">20분 전</div>
+                  </div>
+                </div>
+                <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="post-team-tag">
+                <img src="assets/img/teams/라쿤.svg" alt="CR" onerror="this.style.display='none'">
+                CR
+              </div>
+              <div class="post-body">
+                #CRWiN 외쳐 준빈 갓또 <br>
+                STAGE2 전승 우승 가보자!! ❤️🦝
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <button class="post-action-btn" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> <span class="like-count">9</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="bi bi-chat"></i> <span>2</span>
+                  </button>
+                </div>
+                <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+              </div>
+            </div>
+
+            <!-- Post 4: FLC -->
+            <div class="post-card" data-team="FLC">
+              <div class="d-flex align-items-start justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+                  <div>
+                    <div class="post-username">팔콘팬클럽</div>
+                    <div class="post-time">34분 전</div>
+                  </div>
+                </div>
+                <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="post-team-tag">
+                <img src="assets/img/teams/팔콘.webp" alt="FLC" onerror="this.style.display='none'">
+                FLC
+              </div>
+              <div class="post-body">
+                팔콘 오늘 경기 너무 멋있었어요 🦅<br>
+                국제무대에서도 꼭 우승해줘요! 항상 응원합니다!
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <button class="post-action-btn" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> <span class="like-count">31</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="bi bi-chat"></i> <span>5</span>
+                  </button>
+                </div>
+                <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+              </div>
+            </div>
+
+            <!-- Post 5: RØDE -->
+            <div class="post-card" data-team="RODE">
+              <div class="d-flex align-items-start justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+                  <div>
+                    <div class="post-username">로데서포터</div>
+                    <div class="post-time">1시간 전</div>
+                  </div>
+                </div>
+                <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="post-team-tag">
+                <img src="assets/img/teams/로데.webp" alt="RØDE" onerror="this.style.display='none'">
+                RØDE
+              </div>
+              <div class="post-body">
+                RØDE 다음 경기도 기대할게요!<br>
+                포기하지 말고 끝까지 달려줘요 💪
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-1">
+                  <button class="post-action-btn" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> <span class="like-count">7</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="bi bi-chat"></i> <span>0</span>
+                  </button>
+                </div>
+                <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+              </div>
+            </div>
+
+          </div><!-- end postList -->
+
+          <!-- 더 보기 버튼 -->
+          <div class="text-center mt-2">
+            <button class="btn btn-outline-secondary rounded-pill px-5" style="font-size:0.82rem; font-weight:700;">
+              게시글 더 보기 <i class="bi bi-chevron-down ms-1"></i>
+            </button>
+          </div>
+
+        </div><!-- end col-lg-8 -->
+
+        <!-- ── 사이드바 (오른쪽) ── -->
+        <div class="col-lg-4">
+
+          <!-- 응원 글 작성 -->
+          <div class="write-card mb-4">
+            <div class="sidebar-title">응원 글 작성</div>
+            <textarea class="write-textarea mb-3" id="writeArea" placeholder="선수와 팀에게 응원의 메시지를 남겨주세요!" maxlength="500" oninput="updateCount()"></textarea>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-1">
+                <button class="write-action-icon" title="이미지 첨부"><i class="bi bi-image"></i></button>
+                <button class="write-action-icon" title="이모지"><i class="bi bi-emoji-smile"></i></button>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span class="char-count"><span id="charCount">0</span>/500</span>
+                <button class="submit-btn" onclick="submitPost()">등록하기</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 인기 응원 게시글 -->
+          <div class="popular-card">
+            <div class="sidebar-title">인기 응원 게시글</div>
+
+            <div class="popular-item">
+              <div class="popular-rank top">1</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">와 님들 개웃겼어요</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/라쿤.svg" alt="" onerror="this.style.display='none'">
+                  CR
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 284</div>
+            </div>
+
+            <div class="popular-item">
+              <div class="popular-rank top">2</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">역전의 T1 역시 믿고 보는 팀</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/티원.svg" alt="" onerror="this.style.display='none'">
+                  T1
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 97</div>
+            </div>
+
+            <div class="popular-item">
+              <div class="popular-rank top">3</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">ZETA의 집중력 대박!</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/제타.svg" alt="" onerror="this.style.display='none'">
+                  ZETA
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 76</div>
+            </div>
+
+            <div class="popular-item">
+              <div class="popular-rank">4</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">CR 다음 경기 기대할게요</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/라쿤.svg" alt="" onerror="this.style.display='none'">
+                  CR
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 65</div>
+            </div>
+
+            <div class="popular-item">
+              <div class="popular-rank">6</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">팔콘 국제무대에서도 화이팅!</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/팔콘.webp" alt="" onerror="this.style.display='none'">
+                  FLC
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 41</div>
+            </div>
+
+            <div class="popular-item">
+              <div class="popular-rank">7</div>
+              <div class="flex-grow-1">
+                <div class="popular-title">RØDE 포기하지 말아요 💪</div>
+                <div class="popular-meta">
+                  <img src="assets/img/teams/로데.webp" alt="" onerror="this.style.display='none'">
+                  RØDE
+                </div>
+              </div>
+              <div class="popular-likes"><i class="bi bi-heart-fill"></i> 33</div>
+            </div>
+
+          </div>
+
+        </div><!-- end sidebar -->
+
+      </div>
+    </div>
+  </section>
+  <!-- End Main Content -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 footer-links mb-4">
+          <ul class="d-flex flex-wrap justify-content-center align-items-center gap-4 list-unstyled mb-0">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">대회 안내</a></li>
+            <li><a href="rank.html">대회 및 순위</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="media.html">미디어</a></li>
+            <li><a href="fan.html">팬</a></li>
+            <li><a href="qna.html">QnA</a></li>
+            <li><a href="news.html">NEWS</a></li>
+          </ul>
+        </div>
+
+          <div class="col-12 text-center mb-2">
+            <div class="footer-social-links d-flex justify-content-center gap-4">
+              <a href="https://www.instagram.com/ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/OW_Esports_Asia" target="_blank" class="fs-3"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/@ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright text-white-50">&copy; Copyright <strong><span>OWCS KR</span></strong>. All Rights Reserved</div>
+      <div class="credits text-white-50">Designed by <a href="https://bootstrapmade.com/" class="text-white-50 text-decoration-underline">BootstrapMade</a></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // ── 팀 필터 ──
+    let currentTeam = 'all';
+
+    function filterTeam(el, team) {
+      // 탭 활성화
+      document.querySelectorAll('.team-tab').forEach(t => {
+        t.classList.remove('active');
+        // 전체 탭은 검정 유지
+        if (t.classList.contains('tab-all')) {
+          t.style.background = '';
+          t.style.borderColor = '';
+        }
+      });
+      el.classList.add('active');
+      currentTeam = team;
+
+      // 게시글 필터링
+      const posts = document.querySelectorAll('.post-card');
+      posts.forEach(post => {
+        if (team === 'all') {
+          post.style.display = '';
+        } else {
+          post.style.display = post.dataset.team === team ? '' : 'none';
+        }
+      });
+    }
+
+    // ── 정렬 탭 ──
+    function setSort(el) {
+      document.querySelectorAll('.sort-tab').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    // ── 좋아요 토글 ──
+    function toggleLike(btn) {
+      const icon = btn.querySelector('i');
+      const count = btn.querySelector('.like-count');
+      const n = parseInt(count.textContent);
+      if (btn.classList.contains('liked')) {
+        btn.classList.remove('liked');
+        icon.className = 'bi bi-heart';
+        count.textContent = n - 1;
+      } else {
+        btn.classList.add('liked');
+        icon.className = 'bi bi-heart-fill';
+        count.textContent = n + 1;
+      }
+    }
+
+    // ── 글자 수 카운트 ──
+    function updateCount() {
+      const len = document.getElementById('writeArea').value.length;
+      document.getElementById('charCount').textContent = len;
+    }
+
+    // ── 게시글 등록 ──
+    function submitPost() {
+      const text = document.getElementById('writeArea').value.trim();
+      if (!text) { alert('응원 메시지를 입력해주세요!'); return; }
+
+      const list = document.getElementById('postList');
+      const now = new Date();
+      const card = document.createElement('div');
+      card.className = 'post-card';
+      card.dataset.team = currentTeam === 'all' ? 'ALL' : currentTeam;
+      card.innerHTML = `
+        <div class="d-flex align-items-start justify-content-between mb-3">
+          <div class="d-flex align-items-center gap-3">
+            <div class="post-avatar"><i class="bi bi-person-fill"></i></div>
+            <div>
+              <div class="post-username">익명 팬</div>
+              <div class="post-time">방금 전</div>
+            </div>
+          </div>
+          <button class="post-more-btn"><i class="bi bi-three-dots"></i></button>
+        </div>
+        <div class="post-body">${text.replace(/\n/g, '<br>')}</div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-1">
+            <button class="post-action-btn" onclick="toggleLike(this)">
+              <i class="bi bi-heart"></i> <span class="like-count">0</span>
+            </button>
+            <button class="post-action-btn"><i class="bi bi-chat"></i> <span>0</span></button>
+          </div>
+          <button class="bookmark-btn"><i class="bi bi-bookmark"></i></button>
+        </div>
+      `;
+      list.insertBefore(card, list.firstChild);
+      document.getElementById('writeArea').value = '';
+      document.getElementById('charCount').textContent = 0;
+    }
+  </script>
+
+</body>
+</html>

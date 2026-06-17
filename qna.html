@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>OWCS KOREA | QnA</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <h1 class="text-light">
+          <a href="index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="assets/img/owcs logo.png" alt="OWCS Logo" class="img-fluid me-2" style="max-height:35px;">
+            <span>OWCS KOREA</span>
+          </a>
+        </h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">대회 안내</a></li>
+          <li class="dropdown"><a href="#"><span>대회 및 순위</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>STAGE1</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="rank.html">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">CHAMPIONS CLASH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE2</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">MIDSEASON CHAMPIONSHIP</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>STAGE3</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">KOREA</a></li>
+                  <li><a href="#">ASIA</a></li>
+                  <li><a href="#">WORLD FINALS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="team.html"><span>TEAM</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="team.html">CRAZY RACCOON</a></li>
+              <li><a href="#">ZETA DIVISION</a></li>s
+              <li><a href="#">T1</a></li>
+              <li><a href="#">TEAM FALCONS</a></li>
+              <li><a href="#">RØDE ZANSIDE GAMING</a></li>
+              <li><a href="#">POKER FACE</a></li>
+              <li><a href="#">CHEESEBURGER</a></li>
+              <li><a href="#">O2 BLAST</a></li>
+              <li><a href="#">SUPERBAD</a></li>
+            </ul>
+          </li>
+          <li><a href="media.html">미디어</a></li>
+          <li><a href="fan.html">팬</a></li>
+          <li><a class="active" href="qna.html">QnA</a></li>
+          <li><a href="news.html">NEWS</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Wide Banner ======= -->
+     <section id="fan-banner">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="mb-2">QnA</h1>
+          <p class="banner-desc mb-4">
+            OWCS에 대해 자주 묻는 질문을 확인해보세요.<br>
+            궁금한 점이 해결되지 않았다면 아래 질문을 남겨주세요.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Banner -->
+
+  <!-- ======= Main Content ======= -->
+  <section class="py-5 bg-light">
+    <div class="container-fluid px-lg-5">
+
+      <!-- ── FAQ 아코디언 ── -->
+      <div class="mb-5">
+
+        <!-- FAQ 1 (열린 상태) -->
+        <div class="faq-item open" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">OWCS에 참가할 수 있는 자격 조건이 있나요?</span>
+            <i class="bi bi-chevron-up faq-chevron"></i>
+          </div>
+          <div class="faq-body open">
+            OWCS에 참가하기 위해서는 팀 로스터가 아래 조건을 충족해야 합니다.
+            <ul>
+              <li>최대 8명의 선수로 구성</li>
+              <li>만 17세 이상 (일부 지역은 만 18세 이상)</li>
+              <li>OW2 계정이 정지 상태가 아닐 것</li>
+              <li>Blizzard 및 토너먼트 운영 정책을 준수할 것</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">OWCS의 연령 제한이 있나요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            참가 선수는 만 17세 이상이어야 합니다. 단, 일부 지역 규정에 따라 만 18세 이상을 요구하는 경우도 있습니다. 미성년 선수는 부모 또는 법정 대리인의 동의서가 필요할 수 있습니다.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">FACEIT 참가 자격 조건이 있나요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            OWCS Open 참가를 위해서는 FACEIT 계정이 필요합니다. FACEIT 계정은 무료로 생성 가능하며, 배틀넷 계정과 연동 후 참가 신청을 진행하시면 됩니다.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">로스터 교체는 언제 가능한가요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            선수 교체는 각 스테이지 시작 전 지정된 로스터 등록 기간에만 가능합니다. 스테이지 진행 중 로스터 변경은 원칙적으로 불가하며, 긴급 상황의 경우 운영진에게 별도 문의해 주세요.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">상금은 어떻게 지급되나요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            상금은 대회 종료 후 약 30~60일 이내에 등록된 계좌 또는 결제 수단으로 지급됩니다. 세금 처리는 각 국가의 법률에 따르며, 지급 전 필요 서류(세금 양식 등) 제출을 요청받을 수 있습니다.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">OWCS 경기는 어디에서 시청할 수 있나요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            OWCS 경기는 공식 유튜브 채널, Twitch, 그리고 SOOP(구 아프리카TV)에서 무료로 시청할 수 있습니다. 한국 서버 주요 경기는 한국어 해설과 함께 방송됩니다.
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-header">
+            <span class="faq-q-label">Q.</span>
+            <span class="faq-question">문의 사항은 어디로 연락하면 되나요?</span>
+            <i class="bi bi-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-body">
+            공식 문의는 아래 채널을 이용해 주세요.
+            <ul>
+              <li>공식 트위터: <a href="https://x.com/OW_Esports_Asia" target="_blank" style="color:#0984e3;">@OW_Esports_Asia</a></li>
+              <li>아래 커뮤니티 Q&A에서 질문 등록</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── 커뮤니티 Q&A ── -->
+      <div class="mb-2">
+        <div class="section-big-title mb-1">커뮤니티 Q&A</div>
+        <p class="section-sub mb-4">여러분의 질문을 남겨주세요! 커뮤니티와 운영진이 답변을 드립니다.</p>
+
+        <!-- 카테고리 탭 + 필터 -->
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+          <div class="d-flex gap-2">
+            <button class="cat-tab active" onclick="filterCat(this,'all')">전체</button>
+            <button class="cat-tab" onclick="filterCat(this,'대회')">대회/참가</button>
+            <button class="cat-tab" onclick="filterCat(this,'경기')">경기/규정</button>
+            <button class="cat-tab" onclick="filterCat(this,'기타')">기타</button>
+          </div>
+          <div class="d-flex gap-2">
+            <select class="filter-select" onchange="filterSort(this)">
+              <option value="recent">최신순</option>
+              <option value="views">조회순</option>
+              <option value="comments">댓글순</option>
+            </select>
+            <select class="filter-select" onchange="filterStatus(this)">
+              <option value="all">전체 상태</option>
+              <option value="waiting">답변 대기</option>
+              <option value="done">답변 완료</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Q&A 목록 -->
+        <div id="qaList">
+
+          <!-- Q1 -->
+          <div class="qa-row" data-cat="대회" data-status="waiting">
+            <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="qa-username">OWL_FAN</span>
+                <span class="qa-date">1일 전</span>
+                <span class="qa-cat-badge cat-badge-대회">대회/참가</span>
+              </div>
+              <div class="qa-title">플레이 오프 규칙이 뭔가요?</div>
+              <div class="qa-meta">
+                <span><i class="bi bi-eye"></i>125</span>
+                <span><i class="bi bi-chat"></i>3</span>
+              </div>
+            </div>
+            <span class="qa-status status-waiting">답변 대기</span>
+          </div>
+
+          <!-- Q2 -->
+          <div class="qa-row" data-cat="경기" data-status="done">
+            <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="qa-username">OVERWATCHER</span>
+                <span class="qa-date">2일 전</span>
+                <span class="qa-cat-badge cat-badge-경기">경기/규정</span>
+              </div>
+              <div class="qa-title">동일 선수가 다른 팀으로 중복 참가할 수 있나요?</div>
+              <div class="qa-meta">
+                <span><i class="bi bi-eye"></i>98</span>
+                <span><i class="bi bi-chat"></i>1</span>
+              </div>
+            </div>
+            <span class="qa-status status-done">답변 완료</span>
+          </div>
+
+          <!-- Q3 -->
+          <div class="qa-row" data-cat="기타" data-status="done">
+            <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="qa-username">TRACER_LOVER</span>
+                <span class="qa-date">3일 전</span>
+                <span class="qa-cat-badge cat-badge-기타">기타</span>
+              </div>
+              <div class="qa-title">선수가 너무 좋으면 어떡하나요?ㅜㅜ</div>
+              <div class="qa-meta">
+                <span><i class="bi bi-eye"></i>67</span>
+                <span><i class="bi bi-chat"></i>2</span>
+              </div>
+            </div>
+            <span class="qa-status status-done">답변 완료</span>
+          </div>
+
+          <!-- Q4 -->
+          <div class="qa-row" data-cat="대회" data-status="waiting">
+            <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="qa-username">OW_NEWBIE</span>
+                <span class="qa-date">4일 전</span>
+                <span class="qa-cat-badge cat-badge-대회">대회/참가</span>
+              </div>
+              <div class="qa-title">참가 신청 기간이 언제인가요?</div>
+              <div class="qa-meta">
+                <span><i class="bi bi-eye"></i>54</span>
+                <span><i class="bi bi-chat"></i>0</span>
+              </div>
+            </div>
+            <span class="qa-status status-waiting">답변 대기</span>
+          </div>
+
+          <!-- Q5 -->
+          <div class="qa-row" data-cat="경기" data-status="done">
+            <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+            <div class="flex-grow-1">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="qa-username">REINHARDT99</span>
+                <span class="qa-date">5일 전</span>
+                <span class="qa-cat-badge cat-badge-경기">경기/규정</span>
+              </div>
+              <div class="qa-title">경기 중 연결이 끊기면 어떻게 되나요?</div>
+              <div class="qa-meta">
+                <span><i class="bi bi-eye"></i>43</span>
+                <span><i class="bi bi-chat"></i>4</span>
+              </div>
+            </div>
+            <span class="qa-status status-done">답변 완료</span>
+          </div>
+
+        </div><!-- end qaList -->
+
+      </div>
+
+      <!-- ── 질문하기 폼 ── -->
+      <div class="ask-form-wrap mt-4">
+        <div class="ask-form-title">질문하기</div>
+        <div class="row g-3 align-items-start">
+
+          <!-- 제목 + 카테고리 -->
+          <div class="col-lg-6">
+            <input type="text" class="ask-input" placeholder="제목을 입력해주세요.">
+          </div>
+          <div class="col-lg-3">
+            <select class="ask-select">
+              <option value="" disabled selected>카테고리 선택</option>
+              <option value="대회">대회/참가</option>
+              <option value="경기">경기/규정</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+          <div class="col-lg-3 d-flex align-items-start">
+            <button class="ask-submit-btn w-100" onclick="submitQuestion()" style="height:44px;">질문 등록</button>
+          </div>
+
+          <!-- 내용 -->
+          <div class="col-12">
+            <textarea class="ask-textarea" id="askBody" placeholder="질문 내용을 입력해주세요." maxlength="1000" oninput="updateAskCount()"></textarea>
+            <div class="ask-char"><span id="askCount">0</span>/1000</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Main Content -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 footer-links mb-4">
+          <ul class="d-flex flex-wrap justify-content-center align-items-center gap-4 list-unstyled mb-0">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">대회 안내</a></li>
+            <li><a href="rank.html">대회 및 순위</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="media.html">미디어</a></li>
+            <li><a href="fan.html">팬</a></li>
+            <li><a href="qna.html">QnA</a></li>
+            <li><a href="news.html">NEWS</a></li>
+          </ul>
+        </div>
+
+          <div class="col-12 text-center mb-2">
+            <div class="footer-social-links d-flex justify-content-center gap-4">
+              <a href="https://www.instagram.com/ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/OW_Esports_Asia" target="_blank" class="fs-3"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/@ow_esports_kr" target="_blank" class="fs-3"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright text-white-50">&copy; Copyright <strong><span>OWCS KR</span></strong>. All Rights Reserved</div>
+      <div class="credits text-white-50">Designed by <a href="https://bootstrapmade.com/" class="text-white-50 text-decoration-underline">BootstrapMade</a></div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // ── FAQ 아코디언 ──
+    function toggleFaq(item) {
+      const isOpen = item.classList.contains('open');
+      // 모두 닫기
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-body').classList.remove('open');
+        i.querySelector('.faq-chevron').className = 'bi bi-chevron-down faq-chevron';
+      });
+      // 클릭한 것만 열기 (이미 열려 있으면 닫힌 채로 유지)
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-body').classList.add('open');
+        item.querySelector('.faq-chevron').className = 'bi bi-chevron-up faq-chevron';
+      }
+    }
+
+    // ── Q&A 카테고리 필터 ──
+    let currentCat = 'all';
+    let currentStatus = 'all';
+
+    function filterCat(btn, cat) {
+      document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCat = cat;
+      applyQaFilter();
+    }
+
+    function filterStatus(sel) {
+      currentStatus = sel.value;
+      applyQaFilter();
+    }
+
+    function filterSort(sel) {
+      // 실제 정렬 로직은 서버 연동 시 구현 — 여기선 UI만
+    }
+
+    function applyQaFilter() {
+      document.querySelectorAll('.qa-row').forEach(row => {
+        const catMatch    = currentCat    === 'all' || row.dataset.cat    === currentCat;
+        const statusMatch = currentStatus === 'all' || row.dataset.status === currentStatus;
+        row.style.display = (catMatch && statusMatch) ? '' : 'none';
+      });
+    }
+
+    // ── 글자수 ──
+    function updateAskCount() {
+      document.getElementById('askCount').textContent =
+        document.getElementById('askBody').value.length;
+    }
+
+    // ── 질문 등록 ──
+    function submitQuestion() {
+      const body = document.getElementById('askBody').value.trim();
+      if (!body) { alert('질문 내용을 입력해주세요.'); return; }
+
+      const list = document.getElementById('qaList');
+      const row  = document.createElement('div');
+      row.className = 'qa-row';
+      row.dataset.cat    = 'all';
+      row.dataset.status = 'waiting';
+      row.innerHTML = `
+        <div class="qa-avatar"><i class="bi bi-person-fill"></i></div>
+        <div class="flex-grow-1">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <span class="qa-username">익명</span>
+            <span class="qa-date">방금 전</span>
+            <span class="qa-cat-badge cat-badge-기타">기타</span>
+          </div>
+          <div class="qa-title">${body.slice(0, 60)}${body.length > 60 ? '...' : ''}</div>
+          <div class="qa-meta">
+            <span><i class="bi bi-eye"></i>1</span>
+            <span><i class="bi bi-chat"></i>0</span>
+          </div>
+        </div>
+        <span class="qa-status status-waiting">답변 대기</span>
+      `;
+      list.insertBefore(row, list.firstChild);
+      document.getElementById('askBody').value = '';
+      document.getElementById('askCount').textContent = 0;
+      alert('질문이 등록되었습니다!');
+    }
+  </script>
+
+</body>
+</html>
